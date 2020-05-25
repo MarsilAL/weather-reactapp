@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+published at https://marsilal.github.io/weather-reactapp/
 
 ## Available Scripts
 
