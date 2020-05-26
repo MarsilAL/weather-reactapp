@@ -4,9 +4,23 @@ padding: 0;
 box-sizing: border-box;
 }
 
+@media (min-width: 720px){
+ 
+  .app{
+    max-width: 5000px;
+    max-height: 100%;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+  }
+
+   
+}
+
 body {
   font-family: 'montseratt', sans-serif;
 }
+
 
 .app{
   background-image: url('./assets/start.jpg');
@@ -54,7 +68,7 @@ main{
   transition: 4.6s ease-out;
 }
 .search-box .search-bar:focus {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 
