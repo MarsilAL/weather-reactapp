@@ -10,6 +10,10 @@ function App() {
 
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
+  const [appstyle, setAppstyle] = useState({
+    in:"search-boxD",
+    out:"search-box"
+  });
 
   const search = evt => {
     if (evt.key === "Enter") {
@@ -39,7 +43,7 @@ function App() {
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 17) ? 'app warm' :(weather.main.temp < 17) ? 'app cold' : 'app') : 'app'}>
       <main>
-        <div className="search-box">
+        <div className={(typeof weather.main != "undefined") ? 'search-box'  : 'search-boxD'}>
           <input 
            type="text"
            className="search-bar" 
